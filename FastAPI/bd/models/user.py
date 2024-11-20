@@ -1,6 +1,6 @@
-from pydantic import BaseModel
+from pydantic import BaseModel,Field
 
 class User(BaseModel):
-    id:str | None   #significa que el id puede ser opcional
+    id:str | None = Field(default=None)  
     username:str
     email:str
