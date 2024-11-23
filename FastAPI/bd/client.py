@@ -12,5 +12,3 @@ from pymongo import MongoClient
 ##Base de datos remota
 db_client = MongoClient("mongodb+srv://julimillen:g4eH4bTzxS64AkQd@bdcursopython.aoejg.mongodb.net/?retryWrites=true&w=majority&appName=bdCursoPython").bdCursoPython
 
-DATABASE_URL = os.getenv("DATABASE_URL")
-db_client = MongoClient(DATABASE_URL)

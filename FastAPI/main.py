@@ -1,11 +1,8 @@
-import os
 from fastapi import FastAPI
 from routers import products,users,basicAuths,jwt_auth,users_db
 from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
-
-database_url = os.environ.get('DATABASE_URL')
 
 #Routers
 app.include_router(products.router)
